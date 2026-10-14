@@ -1,0 +1,26 @@
+<library path="crisp_controllers">
+    <class name="crisp_controllers/CartesianController"
+           type="crisp_controllers::CartesianController" base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Control the 3D pose of the end-effector using impedance control or OSC with pinocchio model.
+        </description>
+    </class>
+    <class name="crisp_controllers/PoseBroadcaster"
+           type="crisp_controllers::PoseBroadcaster" base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Simple broadcaster for the pose.
+        </description>
+    </class>
+    <class name="crisp_controllers/TorqueFeedbackController"
+           type="crisp_controllers::TorqueFeedbackController" base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Torque feedback controller for robotic manipulators that responds to external torques with PD control and friction compensation.
+        </description>
+    </class>
+    <class name="crisp_controllers/TwistBroadcaster"
+           type="crisp_controllers::TwistBroadcaster" base_class_type="controller_interface::ControllerInterface">
+        <description>
+            Simple broadcaster for the twist velocity.
+        </description>
+    </class>
+</library>

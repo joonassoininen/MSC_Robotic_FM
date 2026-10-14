@@ -1,0 +1,34 @@
+control_frequency: 30.0
+gripper_enabled: false
+gripper_continuous_control: true
+gripper_threshold: 0.1
+
+cartesian_control_param_config: null
+joint_control_param_config: null
+
+robot_config:
+  robot_type: "franka"
+
+camera_configs:
+  - camera_name: "wrist_left"
+    camera_frame: "wrist_link_left"
+    resolution: [720, 1280]
+    camera_color_image_topic: "/zed/zed_node/left/color/raw/image"
+    camera_color_info_topic: "/zed/zed_node/left/color/raw/camera_info"
+  - camera_name: "wrist_right"
+    camera_frame: "wrist_link_right"
+    resolution: [720, 1280]
+    camera_color_image_topic: "/zed/zed_node/right/color/raw/image"
+    camera_color_info_topic: "/zed/zed_node/left/color/raw/camera_info"
+  - camera_name: "third_person"
+    camera_frame: "third_person_link"
+    resolution: [720, 1280]
+    camera_color_image_topic: "camera/camera/color/image_raw"
+    camera_color_info_topic: "camera/camera/color/camera_info"
+
+gripper_config:
+  min_value: 0
+  max_value: 1
+
+camera_configs: []
+sensor_configs: []
